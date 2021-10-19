@@ -55,7 +55,14 @@ main {
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 6px;
-    margin: 10px 0;
+    margin: 10px auto;
+    width: 200px;
+}
+
+.action.close{
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    font-size: 50px;
 }
 
 .action:hover {
@@ -78,7 +85,10 @@ a {
     overflow: hidden;
     width: 100%;
     min-height: 100px;
+    display: flex;
+    margin-bottom: 5px;
 }
+
 
 a:nth-child(n) {
     background-color: #EFEBE9;
@@ -96,6 +106,7 @@ a:nth-child(3n) {
 .popup .content {
     text-align: right;
     column-count: initial;
+    max-height: 100%;
 }
 
 figure {
@@ -106,6 +117,10 @@ figure {
 
 figure img {
     border-radius: 6px;
+    max-height: 400px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 figcaption {
@@ -126,14 +141,13 @@ figcaption {
     bottom: 0;
     right: 0;
     background-color: rgba(33, 33, 33, 0.5);
-    z-index: -1;
 }
 
 .popup.open {
     visibility: visible;
 }
 
-.action {
+.action.close {
     position: absolute;
     top: 50px;
     right: 50px;
@@ -144,6 +158,7 @@ figcaption {
     height: 40px;
     border-radius: 50%;
 }
+
 
 .popup .content {
     width: 100%;
@@ -157,4 +172,5 @@ figcaption {
 
 .popup .link {
     display: inline;
+    background-color: rgba(0, 0, 0, 0)
 }
