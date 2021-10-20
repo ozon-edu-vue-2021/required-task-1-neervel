@@ -80,12 +80,11 @@ main {
 }
 
 a {
-    display: inline-block;
     border-radius: 6px;
     overflow: hidden;
     width: 100%;
     min-height: 100px;
-    display: flex;
+    display: inline-flex;
     margin-bottom: 5px;
 }
 
